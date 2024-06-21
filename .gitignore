@@ -1,0 +1,5 @@
+src/objs/
+src/bin/
+
+*.obj
+*.exe
