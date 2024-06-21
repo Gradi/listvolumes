@@ -4,8 +4,7 @@
 
 String StringNew(SIZE_T charCount)
 {
-    charCount += 1;
-    const SIZE_T bufferSize = sizeof(TCHAR) * charCount;
+    const SIZE_T bufferSize = sizeof(TCHAR) * (charCount + 1);
 
     LPVOID ptr = VirtualAlloc(NULL, bufferSize, MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE);
     if (ptr == NULL)
